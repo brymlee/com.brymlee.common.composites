@@ -1,2 +1,2 @@
-docker build -t java . --file Java.dockerfile
-docker build -t com.brymlee.common.composites . --no-cache --file Development.dockerfile
+bash build-development-environment.sh
+docker build -t com.brymlee.common.composites . --file Application.dockerfile --no-cache
