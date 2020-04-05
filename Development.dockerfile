@@ -7,6 +7,7 @@ RUN cp /com.brymlee.common.composites/.group /etc/group
 RUN cp /com.brymlee.common.composites/.gshadow /etc/gshadow
 RUN su $(cat /com.brymlee.common.composites/.whoami)
 RUN mkdir /home/$(cat /com.brymlee.common.composites/.whoami)
+RUN cp /root/.vimrc /home/$(cat /com.brymlee.common.composites/.whoami)/
 ADD .ssh /.ssh 
 RUN mv /.ssh /home/$(cat /com.brymlee.common.composites/.whoami)/.ssh 
 RUN git config --system user.email $(cat /com.brymlee.common.composites/.user.email)

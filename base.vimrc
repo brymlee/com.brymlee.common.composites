@@ -6,4 +6,4 @@ set ruler
 set smarttab
 set shiftwidth=4
 set swapfile
-set dir=/
+set dir=/tmp
