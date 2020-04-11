@@ -1,5 +1,7 @@
 package com.brymlee.common.composites.pub;
 
+import com.brymlee.common.composites.pub.TupleFactory.tuple;
+
 public class Tuple5<T, U, V, W, X>{
 
 	private final T t1;
@@ -45,6 +47,34 @@ public class Tuple5<T, U, V, W, X>{
 	}
 
 	public Tuple4<U, V, W, X> tail(){
-		return TupleFactory.tuple(this.t2, this.t3, this.t4, this.t5);
+		return tuple(this.t2, this.t3, this.t4, this.t5);
+	}
+
+	public <Y> Tuple6<T, U, V, W, X, Y> append(final Y y){
+		return tuple(this.t1, this.t2, this.t3, this.t4, this.t5, y);
+	}
+
+	public <Y, Z> Tuple7<T, U, V, W, X, Y, Z> append(final Y y, final Z z){
+		return tuple(this.t1, this.t2, this.t3, this.t4, this.t5, y, z){
+	}
+
+	public <Y, Z> Tuple7<T, U, V, W, X, Y, Z> append(final Tuple2<Y, Z> tuple){
+		return tuple(this.t1, this.t2, this.t3, this.t4, this.t5, tuple.t1(), tuple.t2());
+	}
+
+	public <Y, Z, A> Tuple8<T, U, V, W, X, Y, Z, A> append(final Y y, final Z z, final A a){
+		return tuple(this.t1, this.t2, this.t3, this.t4, this.t5, y, z, a);
+	}
+
+	public <Y, Z, A> Tuple8<T, U, V, W, X, Y, Z, A> append(final Tuple3<Y, Z, A> tuple){
+		return tuple(this.t1, this.t2, this.t3, this.t4, this.t5, tuple.t1(), tuple.t2(), tuple.t3());
+	}
+
+	public <Y, Z, A, B> Tuple9<T, U, V, W, X, Y, Z, A, B> append(final Y y, final Z z, final A a, final B b){
+		return tuple(this.t1, this.t2, this.t3, this.t4, this.t5, y, z, a, b);
+	}
+
+	public <Y, Z, A, B> Tuple9<T, U, V, W, X, Y, Z, A, B> append(final Tuple4<Y, Z, A, B> tuple){
+		return tuple(this.t1, this.t2, this.t3, this.t4, this.t5, tuple.t1(), tuple.t2(), tuple.t3(), tuple.t4());
 	}
 }
