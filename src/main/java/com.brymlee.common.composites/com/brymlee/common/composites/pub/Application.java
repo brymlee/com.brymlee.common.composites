@@ -9,6 +9,8 @@ public class Application{
 		System.out.println(tuple2.t1());
 		System.out.println(tuple2.t2());
 
+		System.out.println(tuple2.append(3));
+
 		final Tuple3<Integer, Character, Integer> tuple3 = tuple(1, 'c', 2);
 		System.out.println(tuple3.t1());
 		System.out.println(tuple3.t2());
