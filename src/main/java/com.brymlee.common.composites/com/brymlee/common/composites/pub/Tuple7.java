@@ -1,5 +1,7 @@
 package com.brymlee.common.composites.pub;
 
+import static com.brymlee.common.composites.pub.TupleFactory.tuple;
+
 public class Tuple7<T, U, V, W, X, Y, Z>{
 
 	private final T t1;
@@ -59,6 +61,18 @@ public class Tuple7<T, U, V, W, X, Y, Z>{
 	}
 
 	public Tuple6<U, V, W, X, Y, Z> tail(){
-		return TupleFactory.tuple(this.t2, this.t3, this.t4, this.t5, this.t6, this.t7);
+		return tuple(this.t2, this.t3, this.t4, this.t5, this.t6, this.t7);
+	}
+
+	public <A> Tuple8<T, U, V, W, X, Y, Z, A> append(final A a){
+		return tuple(this.t1, this.t2, this.t3, this.t4, this.t5, this.t6, this.t7, a);
+	}
+
+	public <A, B> Tuple9<T, U, V, W, X, Y, Z, A, B> append(final A a, final B b){
+		return tuple(this.t1, this.t2, this.t3, this.t4, this.t5, this.t6, this.t7, a, b);
+	}
+
+	public <A, B> Tuple9<T, U, V, W, X, Y, Z, A, B> append(final Tuple2<A, B> tuple){
+		return tuple(this.t1, this.t2, this.t3, this.t4, this.t5, this.t6, this.t7, tuple.t1(), tuple.t2());
 	}
 }
