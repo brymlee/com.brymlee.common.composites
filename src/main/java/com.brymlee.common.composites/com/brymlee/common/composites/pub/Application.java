@@ -34,6 +34,36 @@ public class Application{
 		System.out.println(tuple6.t4());
 		System.out.println(tuple6.t5());
 		System.out.println(tuple6.t6());
+
+		final Tuple7<Integer, Integer, Integer, Integer, Integer, Integer, Integer> tuple7 = tuple(1, 2, 3, 4, 5, 6, 7);
+		System.out.println(tuple7.t1());
+		System.out.println(tuple7.t2());
+		System.out.println(tuple7.t3());
+		System.out.println(tuple7.t4());
+		System.out.println(tuple7.t5());
+		System.out.println(tuple7.t6());
+		System.out.println(tuple7.t7());
+
+		final Tuple8<Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer> tuple8 = tuple(1, 2, 3, 4, 5, 6, 7, 8);
+		System.out.println(tuple8.t1());
+		System.out.println(tuple8.t2());
+		System.out.println(tuple8.t3());
+		System.out.println(tuple8.t4());
+		System.out.println(tuple8.t5());
+		System.out.println(tuple8.t6());
+		System.out.println(tuple8.t7());
+		System.out.println(tuple8.t8());
+
+		final Tuple9<Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer> tuple9 = tuple(1, 2, 3, 4, 5, 6, 7, 8, 9);
+		System.out.println(tuple9.t1());
+		System.out.println(tuple9.t2());
+		System.out.println(tuple9.t3());
+		System.out.println(tuple9.t4());
+		System.out.println(tuple9.t5());
+		System.out.println(tuple9.t6());
+		System.out.println(tuple9.t7());
+		System.out.println(tuple9.t8());
+		System.out.println(tuple9.t9());
 	}
 
 }
