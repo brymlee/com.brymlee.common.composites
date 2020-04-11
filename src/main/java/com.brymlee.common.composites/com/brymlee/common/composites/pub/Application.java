@@ -19,6 +19,13 @@ public class Application{
 		System.out.println(tuple4.t2());
 		System.out.println(tuple4.t3());
 		System.out.println(tuple4.t4());
+
+		final Tuple5<Integer, Integer, Integer, Integer, Integer> tuple5 = tuple(1, 2, 3, 4, 5);
+		System.out.println(tuple5.t1());
+		System.out.println(tuple5.t2());
+		System.out.println(tuple5.t3());
+		System.out.println(tuple5.t4());
+		System.out.println(tuple5.t5());
 	}
 
 }
