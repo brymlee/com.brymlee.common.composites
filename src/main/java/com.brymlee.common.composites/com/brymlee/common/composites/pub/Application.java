@@ -13,6 +13,12 @@ public class Application{
 		System.out.println(tuple3.t1());
 		System.out.println(tuple3.t2());
 		System.out.println(tuple3.t3());
+
+		final Tuple4<Integer, Integer, Integer, Integer> tuple4 = tuple(1, 2, 3, 4);
+		System.out.println(tuple4.t1());
+		System.out.println(tuple4.t2());
+		System.out.println(tuple4.t3());
+		System.out.println(tuple4.t4());
 	}
 
 }
