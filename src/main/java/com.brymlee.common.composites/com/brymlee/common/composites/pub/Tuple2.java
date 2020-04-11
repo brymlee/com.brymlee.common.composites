@@ -17,4 +17,12 @@ public class Tuple2<T, U>{
 	public U t2(){
 		return this.t2;
 	}
+
+	public T head(){
+		return this.t1;
+	}
+
+	public U tail(){
+		return this.t2;
+	}
 }

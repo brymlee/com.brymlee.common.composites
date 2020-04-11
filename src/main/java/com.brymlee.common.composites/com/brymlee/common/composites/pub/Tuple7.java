@@ -54,4 +54,11 @@ public class Tuple7<T, U, V, W, X, Y, Z>{
 		return this.t7;
 	}
 
+	public T head(){
+		return this.t1;
+	}
+
+	public Tuple6<U, V, W, X, Y, Z> tail(){
+		return TupleFactory.tuple(this.t2, this.t3, this.t4, this.t5, this.t6, this.t7);
+	}
 }

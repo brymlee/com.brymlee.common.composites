@@ -39,4 +39,12 @@ public class Tuple5<T, U, V, W, X>{
 	public X t5(){
 		return this.t5;
 	}
+
+	public T head(){
+		return this.t1;
+	}
+
+	public Tuple4<U, V, W, X> tail(){
+		return TupleFactory.tuple(this.t2, this.t3, this.t4, this.t5);
+	}
 }

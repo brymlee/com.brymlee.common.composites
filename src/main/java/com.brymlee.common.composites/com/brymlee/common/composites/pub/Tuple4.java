@@ -32,4 +32,12 @@ public class Tuple4<T, U, V, W>{
 		return this.t4;
 	}
 
+	public T head(){
+		return this.t1;
+	}
+
+	public Tuple3<U, V, W> tail(){
+		return TupleFactory.tuple(this.t2, this.t3, this.t4);
+	}
+
 }

@@ -64,6 +64,8 @@ public class Application{
 		System.out.println(tuple9.t7());
 		System.out.println(tuple9.t8());
 		System.out.println(tuple9.t9());
+
+		System.out.println(tuple9.tail().head());
 	}
 
 }
