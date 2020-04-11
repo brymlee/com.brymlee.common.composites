@@ -17,4 +17,8 @@ public class TupleFactory{
 	public static <T, U, V, W, X> Tuple5<T, U, V, W, X> tuple(final T t1, final U t2, final V t3, final W t4, final X t5){
 		return new Tuple5<T, U, V, W, X>(t1, t2, t3, t4, t5);
 	}
+
+	public static <T, U, V, W, X, Y> Tuple6<T, U, V, W, X, Y> tuple(final T t1, final U t2, final V t3, final W t4, final X t5, final Y t6){
+		return new Tuple6<T, U, V, W, X, Y>(t1, t2, t3, t4, t5, t6);
+	}
 }
